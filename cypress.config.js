@@ -1,8 +1,13 @@
-const { defineConfig } = require('cypress')
+import { defineConfig } from 'cypress'
 
-module.exports = defineConfig({
+export default defineConfig({
   e2e: {
     baseUrl: 'https://www.agilean.com.br/qualidade',
-    setupNodeEvents(on, config) {},
+    setupNodeEvents(on, config) {
+      // Você pode configurar plugins aqui futuramente
+    },
+    specPattern: 'cypress/e2e/**/*.cy.js',
+    supportFile: 'cypress/support/e2e.js',
   },
 })
+

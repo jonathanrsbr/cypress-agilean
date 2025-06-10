@@ -9,7 +9,7 @@
     "cy:open": "cypress open",
     "lint": "eslint . --ext .js",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "percy:visual": "percy exec -- cypress run --spec cypress/e2e/visual_percy.cy.js"
   },
   "keywords": [],
   "author": "",
@@ -32,10 +32,10 @@
     "lint-staged": "^16.1.0",
     "prettier": "^3.5.3"
   },
-    "lint-staged": {
-      "**/*.js": [
-        "eslint --fix",
-        "prettier --write"
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "prettier --write"
     ]
   }
 }
