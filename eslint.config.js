@@ -1,8 +1,3 @@
-// eslint.config.js
-import eslintPluginCypress from 'eslint-plugin-cypress'
-import eslintPluginPrettier from 'eslint-plugin-prettier'
-import prettierConfig from './.prettierrc' assert { type: 'json' }
-
 export default [
   {
     files: ['**/*.js'],
@@ -24,3 +19,4 @@ export default [
     ignores: ['node_modules', 'cypress/videos', 'cypress/screenshots'],
   },
 ]
+
