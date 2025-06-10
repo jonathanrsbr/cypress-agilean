@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🧹 Rodando ESLint..."
+npm run lint
+
+echo "🎨 Rodando Prettier..."
+
+npm run format

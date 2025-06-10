@@ -2,14 +2,40 @@
   "name": "cypress-agilean",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^14.4.1"
+    "@percy/cli": "^1.30.11",
+    "@percy/cypress": "^3.1.6",
+    "axe-core": "^4.10.3",
+    "cypress": "^14.4.1",
+    "cypress-axe": "^1.6.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-plugin-api": "^2.11.2",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-real-events": "^1.14.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-cypress": "^5.1.0",
+    "eslint-plugin-prettier": "^5.4.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3"
+  },
+    "lint-staged": {
+      "**/*.js": [
+        "eslint --fix",
+        "prettier --write"
+    ]
   }
 }

@@ -1,0 +1,52 @@
+{
+  "valido": {
+    "nome": "John Doe",
+    "email": "teste@gmail.com",
+    "celular": "+55 (85) 12345-6789",
+    "empresa": "John Doe Company",
+    "cargo": "Sócio, Diretor, C-level, Proprietário",
+    "tipoObra": "Edifícios Verticais",
+    "qtdObras": "2 a 4",
+    "orcamento": "Até R$ 500 mil"
+  },
+  "emailInvalido": {
+    "nome": "John Doe",
+    "email": "teste@gmail.c",
+    "celular": "+55 (85) 12345-6789",
+    "empresa": "John Doe Company",
+    "cargo": "Sócio, Diretor, C-level, Proprietário",
+    "tipoObra": "Edifícios Verticais",
+    "qtdObras": "2 a 4",
+    "orcamento": "Até R$ 500 mil"
+  },
+  "nomeComCaracteresEspeciais": {
+    "nome": "@#$%&",
+    "email": "teste@gmail.com",
+    "celular": "+55 (85) 12345-6789",
+    "empresa": "John Doe Company",
+    "cargo": "Sócio, Diretor, C-level, Proprietário",
+    "tipoObra": "Edifícios Verticais",
+    "qtdObras": "2 a 4",
+    "orcamento": "Até R$ 500 mil"
+  },
+  "celularComLetras": {
+    "nome": "John Doe",
+    "email": "teste@gmail.com",
+    "celular": "abcdefg",
+    "empresa": "John Doe Company",
+    "cargo": "Sócio, Diretor, C-level, Proprietário",
+    "tipoObra": "Edifícios Verticais",
+    "qtdObras": "2 a 4",
+    "orcamento": "Até R$ 500 mil"
+  },
+  "camposVazios": {
+    "nome": "",
+    "email": "",
+    "celular": "",
+    "empresa": "",
+    "cargo": "",
+    "tipoObra": "",
+    "qtdObras": "",
+    "orcamento": ""
+  }
+}
