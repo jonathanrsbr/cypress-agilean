@@ -2,13 +2,13 @@
 
 describe('Testes do Formulário da Landing Page', () => {
   beforeEach(() => {
-    cy.visit('/') // ajuste se necessário
-    cy.get('[data-cy=botao-demonstração]').click() // abre o formulário
+    cy.visit('/')
+    cy.get('[data-cy=botao-demonstração]').click() 
   })
 
   it('Não deve permitir envio com todos os campos vazios', () => {
     cy.get('[data-cy=botao-enviar]').click()
-    cy.contains('Campo obrigatório').should('exist') // ajuste para mensagens reais
+    cy.contains('Campo obrigatório').should('exist') 
   })
 
   it('Não deve permitir envio com apenas um campo preenchido', () => {
